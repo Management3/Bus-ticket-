@@ -40,6 +40,10 @@ dependencies:
   logger: ^2.1.0
   device_preview: ^1.1.0
   flutter_native_splash: ^2.3.11
+  json_annotation: ^4.8.1
+  freezed_annotation: ^2.4.1
+  formz: ^0.6.0
+  flutter_bloc:
 
 
 
@@ -48,6 +52,9 @@ dev_dependencies:
     sdk: flutter
   auto_route_generator: ^7.3.2
   build_runner: ^2.4.8
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
+  very_good_analysis: ^5.1.0
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
