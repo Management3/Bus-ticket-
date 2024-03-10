@@ -1,0 +1,33 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          explicit_to_json: true
+        enabled: true
+        generate_for:
+          include:
+            - lib/**_model.dart
+            - lib/**.model.dart
+            - lib/**_bloc.dart
+            - lib/**_cubit.dart
+
+      freezed:
+        enabled: true
+        generate_for:
+          include:
+            - lib/**_model.dart
+            - lib/**.model.dart
+            - lib/**_bloc.dart
+            - lib/**_cubit.dart
+            - lib/**_state.dart
+            - lib/**_event.dart
+
+      auto_route_generator:
+        enabled: true
+        options:
+          enable_cached_builds: false
+        generate_for:
+          - lib/**_page.dart
+          - lib/**router.dart
+
