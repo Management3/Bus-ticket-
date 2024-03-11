@@ -18,7 +18,7 @@ Future<void> main() async {
   runApp(
     EzyTransport(),
   );
-  Timer(const Duration(seconds: 3), () {
+  Timer(const Duration(seconds: 2), () {
     FlutterNativeSplash.remove();
   });
 }

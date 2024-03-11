@@ -111,7 +111,11 @@ class _SignUpPageState extends State<SignUpPage> {
                 //final password = state.password.value;
                 return MySubmitButton(
                   label: "Sign Up",
-                  onPressed: isButtonDisabled ? null : () {},
+                  onPressed: isButtonDisabled
+                      ? null
+                      : () {
+                          context.pushRoute(const VerifyNumberRoute());
+                        },
                 );
               },
             ),
