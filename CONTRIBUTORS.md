@@ -13,10 +13,14 @@ We welcome contributions from the group members. If you're interested in contrib
 
 Contributors List
 
-    `Your Name
+    Your Name
         Contributions: Feature A, Bugfix B
         GitHub: @your-username`
 
      Solomon Chamamme Nnyabe
      	Contributions: Backend Boilerplate.
 	GitHub: @Nnya-be
+    
+     Kuwuamenu Kofi Gabriel
+     	Contributions: mobile app development.
+	GitHub: @carlysberg
