@@ -24,3 +24,7 @@ Contributors List
      Kuwuamenu Kofi Gabriel
      	Contributions: mobile app development.
 	GitHub: @carlysberg
+
+    Opoku Gyimah Herman
+        Contributions: Assigning tasks
+	Github: @Gyimah13
