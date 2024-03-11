@@ -1,3 +1,10 @@
 *.py~
 ./tests/*.py~
 *.*~
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+venv/
