@@ -28,3 +28,8 @@ Contributors List
     Opoku Gyimah Herman
         Contributions: Assigning tasks
 	Github: @Gyimah13
+ Mensah Emmanuel
+Contributions: frontend development
+Github: MrMensah1
+
+
