@@ -7,7 +7,7 @@ part "my_form_state.freezed.dart";
 @freezed
 abstract class MyFormState with _$MyFormState {
   const factory MyFormState({
-    @Default(Email.pure()) Email email,
+    @Default(UsernameOrPhone.pure()) UsernameOrPhone usernameOrPhone,
     @Default(Password.pure()) Password password,
     @Default(Password.pure()) Password confirmPassword,
     @Default(false) bool isValid,

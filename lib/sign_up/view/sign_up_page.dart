@@ -5,8 +5,8 @@ import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_bl
 import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_event.dart';
 import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_state.dart';
 import 'package:ezy_transport/common/my_text_filled/components/confirm_password_input.dart';
-import 'package:ezy_transport/common/my_text_filled/components/email_input.dart';
 import 'package:ezy_transport/common/my_text_filled/components/password_input.dart';
+import 'package:ezy_transport/common/my_text_filled/components/username_or_phone_number_input.dart';
 import 'package:ezy_transport/common/question_text.dart';
 import 'package:ezy_transport/routes/app_router.gr.dart';
 import 'package:flutter/material.dart';
@@ -92,7 +92,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
             ),
             const Spacer(),
-            UsernameOrPhoneNumberlInput(focusNode: _usernameOrPhoneNumber),
+            UsernameOrPhoneNumberInput(focusNode: _usernameOrPhoneNumber),
             const SizedBox(height: 10),
             PasswordInput(
               focusNode: _passwordFocusNode,
@@ -106,7 +106,7 @@ class _SignUpPageState extends State<SignUpPage> {
             BlocBuilder<MyFormBloc, MyFormState>(
               builder: (context, state) {
                 final isButtonDisabled =
-                    !state.email.isValid || !state.password.isValid;
+                    !state.usernameOrPhone.isValid || !state.password.isValid;
                 //final email = state.email.value;
                 //final password = state.password.value;
                 return MySubmitButton(

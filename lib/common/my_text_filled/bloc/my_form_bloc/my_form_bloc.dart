@@ -25,10 +25,11 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     EmailChanged event,
     Emitter<MyFormState> emit,
   ) {
-    final email = Email.dirty(event.email);
+    final email = UsernameOrPhone.dirty(event.email);
     emit(
       state.copyWith(
-        email: email.isValid ? email : Email.pure(event.email),
+        usernameOrPhone:
+            email.isValid ? email : UsernameOrPhone.pure(event.email),
         isValid: Formz.validate([email, state.password, state.confirmPassword]),
       ),
     );
@@ -43,7 +44,7 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
       state.copyWith(
         password: password.isValid ? password : Password.pure(event.password),
         isValid: Formz.validate(
-          [state.email, password, state.confirmPassword],
+          [state.usernameOrPhone, password, state.confirmPassword],
         ),
       ),
     );
@@ -53,10 +54,10 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     SignInEmailUnfocused event,
     Emitter<MyFormState> emit,
   ) {
-    final email = Email.dirty(state.email.value);
+    final email = UsernameOrPhone.dirty(state.usernameOrPhone.value);
     emit(
       state.copyWith(
-        email: email,
+        usernameOrPhone: email,
         isValid: Formz.validate([email, state.password]),
       ),
     );
@@ -66,10 +67,10 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     SignUpEmailUnfocused event,
     Emitter<MyFormState> emit,
   ) {
-    final email = Email.dirty(state.email.value);
+    final email = UsernameOrPhone.dirty(state.usernameOrPhone.value);
     emit(
       state.copyWith(
-        email: email,
+        usernameOrPhone: email,
         isValid: Formz.validate([email, state.password]),
       ),
     );
@@ -83,7 +84,7 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     emit(
       state.copyWith(
         password: password,
-        isValid: Formz.validate([state.email, password]),
+        isValid: Formz.validate([state.usernameOrPhone, password]),
       ),
     );
   }
@@ -96,7 +97,7 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     emit(
       state.copyWith(
         password: password,
-        isValid: Formz.validate([state.email, password]),
+        isValid: Formz.validate([state.usernameOrPhone, password]),
       ),
     );
   }
@@ -105,11 +106,11 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
     FormSubmitted event,
     Emitter<MyFormState> emit,
   ) async {
-    final email = Email.dirty(state.email.value);
+    final email = UsernameOrPhone.dirty(state.usernameOrPhone.value);
     final password = Password.dirty(state.password.value);
     emit(
       state.copyWith(
-        email: email,
+        usernameOrPhone: email,
         password: password,
         isValid: Formz.validate([email, password, state.confirmPassword]),
       ),
@@ -158,7 +159,7 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
         isValid: confirmPassword.value == password.value &&
             confirmPassword.isValid &&
             password.isValid &&
-            state.email.isValid,
+            state.usernameOrPhone.isValid,
       ),
     );
   }
@@ -172,7 +173,7 @@ class MyFormBloc extends Bloc<MyFormEvent, MyFormState> {
       state.copyWith(
         confirmPassword: confirmPassword,
         isValid: Formz.validate(
-          [state.email, state.password, confirmPassword],
+          [state.usernameOrPhone, state.password, confirmPassword],
         ),
       ),
     );
