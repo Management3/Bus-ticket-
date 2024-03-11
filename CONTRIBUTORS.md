@@ -33,4 +33,9 @@ Contributors List
     Contributions: frontend development
     Github: @MrMensah1
 
+    Dogbey Blessing Emmanuel
+        Contributions: frontend developer
+	Github: @Blessnk1
+	
+
 
