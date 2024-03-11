@@ -38,7 +38,7 @@ class ConfirmPasswordInput extends StatelessWidget {
                 },
                 icon: state.isConfirmPasswordObscure
                     ? SvgPicture.asset(
-                        "assets/images/eye-slash.svg",
+                        "images/eye-slash.svg",
                       )
                     : const Icon(
                         Icons.visibility_outlined,

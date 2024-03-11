@@ -1,41 +1,47 @@
-import "package:auto_route/auto_route.dart";
-import "package:ezy_transport/common/constants.dart";
-import "package:ezy_transport/common/hyperlink_text_button.dart";
-import "package:ezy_transport/common/my_submit_button.dart";
-import "package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_bloc.dart";
-import "package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_event.dart";
-import "package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_state.dart";
-import "package:ezy_transport/common/my_text_filled/components/email_input.dart";
-import "package:ezy_transport/common/my_text_filled/components/password_input.dart";
-import "package:ezy_transport/common/question_text.dart";
-import "package:ezy_transport/routes/app_router.gr.dart";
-import "package:flutter/material.dart";
-import "package:flutter_bloc/flutter_bloc.dart";
+import 'package:auto_route/auto_route.dart';
+import 'package:ezy_transport/common/hyperlink_text_button.dart';
+import 'package:ezy_transport/common/my_submit_button.dart';
+import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_bloc.dart';
+import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_event.dart';
+import 'package:ezy_transport/common/my_text_filled/bloc/my_form_bloc/my_form_state.dart';
+import 'package:ezy_transport/common/my_text_filled/components/confirm_password_input.dart';
+import 'package:ezy_transport/common/my_text_filled/components/email_input.dart';
+import 'package:ezy_transport/common/my_text_filled/components/password_input.dart';
+import 'package:ezy_transport/common/question_text.dart';
+import 'package:ezy_transport/routes/app_router.gr.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 @RoutePage()
-class SignInPage extends StatefulWidget {
-  const SignInPage({Key? key}) : super(key: key);
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _SignUpPageState extends State<SignUpPage> {
   final _usernameOrPhoneNumber = FocusNode();
   final _passwordFocusNode = FocusNode();
+  final _confirmPasswordFocusNode = FocusNode();
 
   @override
   void initState() {
     super.initState();
     _usernameOrPhoneNumber.addListener(() {
       if (!_usernameOrPhoneNumber.hasFocus) {
-        context.read<MyFormBloc>().add(const SignInEmailUnfocused());
+        context.read<MyFormBloc>().add(const SignUpEmailUnfocused());
         FocusScope.of(context).requestFocus(_passwordFocusNode);
       }
     });
     _passwordFocusNode.addListener(() {
       if (!_passwordFocusNode.hasFocus) {
-        context.read<MyFormBloc>().add(const SignInPasswordUnfocused());
+        context.read<MyFormBloc>().add(const SignUpPasswordUnfocused());
+      }
+    });
+    _confirmPasswordFocusNode.addListener(() {
+      if (!_confirmPasswordFocusNode.hasFocus) {
+        context.read<MyFormBloc>().add(const ConfirmPasswordUnfocused());
       }
     });
   }
@@ -44,12 +50,12 @@ class _SignInPageState extends State<SignInPage> {
   void dispose() {
     _usernameOrPhoneNumber.dispose();
     _passwordFocusNode.dispose();
+    _confirmPasswordFocusNode.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    //Get screen height of device
     final screenHeight = MediaQuery.sizeOf(context).height;
 
     return Scaffold(
@@ -67,7 +73,7 @@ class _SignInPageState extends State<SignInPage> {
             ),
             const Spacer(flex: 2),
             const Text(
-              "Sign in",
+              "Sign Up",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 25,
@@ -77,7 +83,7 @@ class _SignInPageState extends State<SignInPage> {
             ),
             const Spacer(),
             const Text(
-              "Welcome back!\nSign in and let’s get going",
+              "New to the EzyTransport mobile app?\nSign up and let’s get started",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w400,
@@ -92,21 +98,11 @@ class _SignInPageState extends State<SignInPage> {
               focusNode: _passwordFocusNode,
               errorText: "Password is incorrect. Please try again.",
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: GestureDetector(
-                  child: const Text(
-                    "Forgot Password?",
-                    style: kQuestionTextStyle,
-                  ),
-                  onTap: () {
-                    //context.pushRoute(const ForgotPasswordRoute());
-                  },
-                ),
-              ),
+            const SizedBox(height: 10),
+            ConfirmPasswordInput(
+              focusNode: _confirmPasswordFocusNode,
             ),
+            const SizedBox(height: 10),
             BlocBuilder<MyFormBloc, MyFormState>(
               builder: (context, state) {
                 final isButtonDisabled =
@@ -114,7 +110,7 @@ class _SignInPageState extends State<SignInPage> {
                 //final email = state.email.value;
                 //final password = state.password.value;
                 return MySubmitButton(
-                  label: "Sign In",
+                  label: "Sign Up",
                   onPressed: isButtonDisabled ? null : () {},
                 );
               },
@@ -124,12 +120,12 @@ class _SignInPageState extends State<SignInPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const QuestionText(
-                  text: "Don't have an account yet?",
+                  text: "Already have an account?",
                 ),
                 HyperlinkTextButton(
-                  text: "Sign Up",
+                  text: "Sign in",
                   onPressed: () {
-                    context.replaceRoute(const SignUpRoute());
+                    context.replaceRoute(const SignInRoute());
                   },
                 ),
               ],
