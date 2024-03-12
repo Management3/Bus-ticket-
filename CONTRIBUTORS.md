@@ -36,6 +36,10 @@ Contributors List
     Dogbey Blessing Emmanuel
         Contributions: frontend developer
 	Github: @Blessnk1
+
+     Ishmael Adams
+        Contribution: frontend developer
+	 Github: @Nanaishmael
 	
 
 
