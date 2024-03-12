@@ -40,6 +40,10 @@ Contributors List
      Ishmael Adams
         Contribution: frontend developer
 	 Github: @Nanaishmael
+
+      Adjahor Benjamin Kusi
+       Contribution: frontend developer
+        Github: @benkusi24
 	
 
 
