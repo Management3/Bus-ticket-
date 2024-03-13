@@ -58,7 +58,7 @@ We welcome contributions from developers of all skill levels! If you'd like to c
 
 ## Resources
 
-[React Documentation](https://react.dev/) - Learn more about React.js and its features.
-[Create React App Documentation](https://react.dev/) - Official documentation for Create React App, the tool used to bootstrap React.js projects.
-[React Router Documentation](https://reactrouter.com/en/main) - Learn how to handle routing in React.js applications.
-[TailwindCSS Documentation](https://tailwindcss.com/docs/installation) - Learn how to create reusable components using the utility classes.
+- [React Documentation](https://react.dev/) - Learn more about React.js and its features.
+- [Create React App Documentation](https://react.dev/) - Official documentation for Create React App, the tool used to bootstrap React.js projects.
+- [React Router Documentation](https://reactrouter.com/en/main) - Learn how to handle routing in React.js applications.
+- [TailwindCSS Documentation](https://tailwindcss.com/docs/installation) - Learn how to create reusable components using the utility classes.
