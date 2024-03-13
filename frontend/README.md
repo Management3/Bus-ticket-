@@ -9,15 +9,15 @@ Our Bus Ticketing App frontend is built using React.js, a popular JavaScript lib
 
 To get started with the frontend development of our Bus Ticketing App, follow these steps:
 
-    - Clone the Repository: If you haven't already, clone the Git repository of the Bus - - Ticketing App to your local machine:
+- Clone the Repository: If you haven't already, clone the Git repository of the Bus - - Ticketing App to your local machine:
 
-    ```git clone git@github.com:Management3/Bus-ticket-.git```
+`git clone git@github.com:Management3/Bus-ticket-.git`
 
-Navigate to the Frontend Directory: Navigate to the frontend directory of the cloned repository:
+- Navigate to the Frontend Directory: Navigate to the frontend directory of the cloned repository:
 
 `cd Bus-ticket-/frontend`
 
-Install Dependencies: Install the necessary dependencies for the frontend using npm or yarn:
+- Install Dependencies: Install the necessary dependencies for the frontend using npm or yarn:
 
 `npm install`
 
@@ -58,7 +58,7 @@ We welcome contributions from developers of all skill levels! If you'd like to c
 
 ## Resources
 
-    [React Documentation](https://react.dev/) - Learn more about React.js and its features.
-    [Create React App Documentation](https://react.dev/) - Official documentation for Create React App, the tool used to bootstrap React.js projects.
-    [React Router Documentation](https://reactrouter.com/en/main) - Learn how to handle routing in React.js applications.
-    [TailwindCSS Documentation](https://tailwindcss.com/docs/installation) - Learn how to create reusable components using the utility classes.
+[React Documentation](https://react.dev/) - Learn more about React.js and its features.
+[Create React App Documentation](https://react.dev/) - Official documentation for Create React App, the tool used to bootstrap React.js projects.
+[React Router Documentation](https://reactrouter.com/en/main) - Learn how to handle routing in React.js applications.
+[TailwindCSS Documentation](https://tailwindcss.com/docs/installation) - Learn how to create reusable components using the utility classes.
