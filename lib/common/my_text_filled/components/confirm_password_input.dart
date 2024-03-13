@@ -21,7 +21,7 @@ class ConfirmPasswordInput extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: TextFormField(
             decoration: InputDecoration(
-              hintText: "Re-enter password",
+              hintText: "Re-Enter Password",
               errorMaxLines: 2,
               errorText: state.confirmPassword.value != state.password.value
                   ? "Both passwords must match"

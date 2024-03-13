@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:ezy_transport/common/my_text_filled/components/generic_text_field.dart';
 import 'package:ezy_transport/common/widgets/my_card.dart';
 import 'package:flutter/material.dart';
 
@@ -33,8 +34,41 @@ class _VerifyNumberPageState extends State<VerifyNumberPage> {
           ),
           MyCard(
             secondChild: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text("data"),
+                const Text(
+                  "We will send you a One Time\nPassword on your phone number",
+                  style: TextStyle(
+                    color: Color(0xFF78898B),
+                    fontSize: 18,
+                  ),
+                ),
+                const GenericTextField(
+                  obscureText: false,
+                  hintText: "Enter Phone Number",
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.all(
+                      16,
+                    ),
+                    backgroundColor: const Color(0xFF0094FF),
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    disabledBackgroundColor:
+                        const Color(0xFF0094FF).withOpacity(0.72),
+                  ),
+                  child: const Text(
+                    "Send",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
               ],
             ),
             child: Column(

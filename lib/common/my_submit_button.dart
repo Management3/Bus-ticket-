@@ -28,8 +28,8 @@ class MySubmitButton extends StatelessWidget {
         ),
         child: Text(
           label,
-          style: const TextStyle(
-            color: Colors.white,
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.72),
             fontWeight: FontWeight.w600,
             letterSpacing: 0.2,
             fontSize: 16,

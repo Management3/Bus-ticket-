@@ -27,7 +27,7 @@ class _GenericTextFieldState extends State<GenericTextField> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 4),
       child: BlocBuilder<PasswordVisibilityBloc, PasswordVisibilityState>(
         builder: (context, state) {
           return TextFormField(
