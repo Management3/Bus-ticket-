@@ -7,4 +7,4 @@ __pycache__/
 *.pyd
 *.db
 *.sqlite
-venv/
+.venv/
