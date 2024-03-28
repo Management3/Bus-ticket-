@@ -3,7 +3,9 @@
 
 import models
 from models.base_model import BaseModel
-
+import sqlalchemy
+from sqlalchemy import DateTime,ForeignKey, Column, String
+from sqlalchemy.orm import relationship
 
 
 class Schedule(BaseModel):
@@ -17,10 +19,21 @@ class Schedule(BaseModel):
     # ------------------------------- #
     #       PUBLIC ATTRIBUTES         #
     # ------------------------------- #
-    departure_time = ''
-    arrival_time = ''
-    bus_id = ''
-    route_id = ''
-    bus = ''
-    route = ''
- 
+
+    if models.storage_op == 'db':
+        __tablename__ = 'schedules'
+        departure_time = Column(DateTime, nullable=False)
+        arrival_time = Column(DateTime, nullable=False)
+        bus_id = Column(String(60),ForeignKey('buses.id'))
+        route_id = Column(String(60), ForeignKey('routes.id'))
+        bus = relationship('Bus', backref='schedules')
+        route = relationship('Route', backref='schedules')
+    else:
+        departure_time = ''
+        arrival_time = ''
+        bus_id = ''
+        route_id = ''
+        bus = ''
+        route = ''
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
