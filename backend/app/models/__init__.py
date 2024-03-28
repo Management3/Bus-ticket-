@@ -4,7 +4,6 @@ initialize the models package
 """
 from os import getenv
 
-
 storage_op = getenv('TYPE_STORAGE')
 
 if storage_op == 'db':

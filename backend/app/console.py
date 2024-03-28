@@ -18,7 +18,7 @@ from models.payment import Payment
 class HBNBCommand(cmd.Cmd):
     """Simple command processor example."""
 
-    #intro = 'Welcome to the Airbnb console\n'
+    #intro = 'Welcome to the  console\n'
     prompt = '(hbnb)'
     cstr = ['BaseModel', 'User', 'Bus', 'Route', 'Schedule','Ticket', 'Payment']
     csob = [BaseModel, User, Bus, Route, Schedule,Ticket, Payment]
