@@ -44,6 +44,10 @@ Contributors List
       Adjahor Benjamin Kusi
        Contribution: frontend developer
         Github: @benkusi24
-	
 
+   
+      Richmond Baah Gyimah 
+        contribution:  assigning tasks
+	Github:@richnird
+        
 
