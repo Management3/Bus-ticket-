@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:ezy_transport/common/my_text_filled/components/generic_text_field.dart';
 import 'package:ezy_transport/common/widgets/my_card.dart';
+import 'package:ezy_transport/routes/app_router.gr.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
@@ -49,7 +50,9 @@ class _VerifyNumberPageState extends State<VerifyNumberPage> {
                   hintText: "Enter Phone Number",
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.pushRoute(const EnterOTPRoute());
+                  },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.all(
                       16,

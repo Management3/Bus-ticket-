@@ -28,6 +28,7 @@ class ConfirmPasswordInput extends StatelessWidget {
                   : null,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide.none,
               ),
               filled: true,
               fillColor: const Color(0xFFF5F5F5),

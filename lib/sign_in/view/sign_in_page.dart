@@ -115,7 +115,14 @@ class _SignInPageState extends State<SignInPage> {
                 //final password = state.password.value;
                 return MySubmitButton(
                   label: "Sign In",
-                  onPressed: isButtonDisabled ? null : () {},
+                  onPressed: isButtonDisabled
+                      ? null
+                      : () {
+                          context.router.pushAndPopUntil(
+                            const DashboardRoute(),
+                            predicate: (_) => false,
+                          );
+                        },
                 );
               },
             ),
