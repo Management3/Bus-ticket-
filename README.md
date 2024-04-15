@@ -28,7 +28,7 @@ This is a comprehensive Bus Ticket Management Application designed to streamline
 
     - Navigate to the flutter directory.
     - Install dependencies: flutter pub get.
-    - Run this: flutter run build_runner build
+    - Run this: dart run build_runner build
     - Run the app on a simulator or physical device: flutter run.
 
 ### Backend (Flask)
