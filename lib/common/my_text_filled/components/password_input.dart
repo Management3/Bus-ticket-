@@ -29,6 +29,7 @@ class PasswordInput extends StatelessWidget {
               errorText: state.password.displayError != null ? errorText : null,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide.none,
               ),
               filled: true,
               fillColor: const Color(0xFFF5F5F5),

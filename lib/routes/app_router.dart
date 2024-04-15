@@ -8,5 +8,11 @@ class AppRouter extends $AppRouter {
         AutoRoute(page: SignInRoute.page, initial: true),
         AutoRoute(page: SignUpRoute.page),
         AutoRoute(page: VerifyNumberRoute.page),
+        AutoRoute(page: EnterOTPRoute.page),
+        AutoRoute(page: DashboardRoute.page),
+        AutoRoute(page: BookedTicketsRoute.page),
+        AutoRoute(page: BookingRoute.page),
+        AutoRoute(page: OnboardingRoute.page),
+        AutoRoute(page: PaymentRoute.page),
       ];
 }
