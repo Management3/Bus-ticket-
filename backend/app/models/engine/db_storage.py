@@ -13,7 +13,7 @@ from models.ticket import Ticket
 from models.user import User
 from os import getenv
 import sqlalchemy
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine , text
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 
@@ -46,7 +46,8 @@ class DBStorage:
         new_dict = {}
         for clss in classes:
             if cls is None or cls is classes[clss] or cls is clss:
-                objs = self.__session.query(classes[clss].all())
+                tablename = f'* FROM {classes[clss].__tablename__}'
+                objs = self.__session.query(classes[clss]).all()
                 for obj in objs:
                     key = obj.__class__.__name__ + '.' + obj.id
                     new_dict[key] = obj

@@ -3,12 +3,12 @@
     A class that inherits from BaseModel.
 """
 import models
-from models.base_model import BaseModel
+from models.base_model import BaseModel, Base
 import sqlalchemy 
 from sqlalchemy import Column, String, ForeignKey, Float
 from sqlalchemy.orm import relationship
 
-class Payment(BaseModel):
+class Payment(BaseModel, Base):
     """
     ------------------
     CLASS: User
