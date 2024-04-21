@@ -3,14 +3,16 @@
 a class User that inherits from BaseModel:
 """
 import models
-from models.base_model import BaseModel
+from models.base_model import BaseModel, Base
 from os import getenv
 import sqlalchemy
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 from hashlib import md5
+from flask_bcrypt import Bcrypt
+import bcrypt
 
-class User(BaseModel):
+class User(BaseModel, Base):
     """
     ------------------
     CLASS: User
@@ -25,7 +27,7 @@ class User(BaseModel):
     # ------------------------------- #
     if models.storage_op == 'db':
         __tablename__ = 'users'
-        email = Column(String(128), nullable=False)
+        email = Column(String(128), nullable=False, unique=True)
         password = Column(String(128), nullable=False)
         first_name = Column(String(128), nullable=False)
         last_name = Column(String(128), nullable=True)
@@ -50,5 +52,6 @@ class User(BaseModel):
     def __setattr__(self, name, value):
         """Hash password then saves."""
         if name == 'password':
-            value = md5(value.encode()).hexdigest()
+            #value = md5(value.encode()).hexdigest()
+            value = bcrypt.hashpw(value.encode('utf-8'),bcrypt.gensalt(12,prefix=b'2b'))
         super().__setattr__(name, value)

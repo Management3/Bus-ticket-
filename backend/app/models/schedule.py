@@ -2,13 +2,13 @@
 """Impletation for the schedule."""
 
 import models
-from models.base_model import BaseModel
+from models.base_model import BaseModel, Base
 import sqlalchemy
 from sqlalchemy import DateTime,ForeignKey, Column, String
 from sqlalchemy.orm import relationship
 
 
-class Schedule(BaseModel):
+class Schedule(BaseModel, Base):
     """
     --------------------
     CLASS: SCHEDULE
@@ -24,8 +24,9 @@ class Schedule(BaseModel):
         __tablename__ = 'schedules'
         departure_time = Column(DateTime, nullable=False)
         arrival_time = Column(DateTime, nullable=False)
-        bus_id = Column(String(60),ForeignKey('buses.id'))
-        route_id = Column(String(60), ForeignKey('routes.id'))
+        session = Column(String(60), nullable=False)
+        bus_id = Column(String(60),ForeignKey('buses.id'),nullable=False)
+        route_id = Column(String(60), ForeignKey('routes.id'),nullable=False)
         bus = relationship('Bus', backref='schedules')
         route = relationship('Route', backref='schedules')
     else:
