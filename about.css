@@ -1,0 +1,723 @@
+.navigation-bar {
+  position: absolute;
+  top: 490px;
+  left: 100px;
+  background: linear-gradient(transparent, transparent),
+    linear-gradient(transparent, transparent), #fff;
+  width: 1440px;
+  height: 123px;
+}
+.ezy-logo-1-icon {
+  height: 56px;
+  width: 122px;
+  position: relative;
+  object-fit: cover;
+}
+.loginsign-up {
+  position: relative;
+  line-height: 23px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.about-us,
+.try-demo {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.about-us {
+  line-height: 23px;
+  min-width: 86px;
+  white-space: nowrap;
+}
+.try-demo {
+  font-size: 20px;
+  line-height: 110%;
+  font-family: Roboto;
+  color: #fff;
+  text-align: left;
+  min-width: 87px;
+}
+.call-to-action,
+.logo-area,
+.navigation-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.call-to-action {
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  background-color: #3846cc;
+  border-radius: 10px;
+  justify-content: center;
+  white-space: nowrap;
+}
+.call-to-action:hover {
+  background-color: #5e6ef2;
+}
+.logo-area,
+.navigation-links {
+  justify-content: flex-start;
+  gap: 18px;
+  max-width: 100%;
+}
+.logo-area {
+  position: absolute;
+  top: 11px;
+  left: 131px;
+  width: 1180px;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+.navigation-header {
+  align-self: stretch;
+  height: 74px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: 20px;
+  color: #005ea3;
+  font-family: Roboto;
+}
+.welcome-banner-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, #2c9cfe, #4950ff);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.welcome-banner-item {
+  position: absolute;
+  top: 55px;
+  left: 76px;
+  width: 1288px;
+  height: 106px;
+  display: none;
+}
+.welcome-to-ezy {
+  margin: 0;
+  width: 1054px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.component {
+  position: absolute;
+  top: 65px;
+  left: 86px;
+  width: 1268px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 2;
+}
+.welcome-to-ezy1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.component1 {
+  position: absolute;
+  top: 231px;
+  left: 483px;
+  width: 475px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 3;
+  font-size: 30px;
+}
+.frame-child,
+.welcome-banner {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+}
+.welcome-banner {
+  height: 287px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, #2c9cfe, #4950ff);
+}
+.frame-child {
+  margin-right: -1px;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.navigation-header-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 44.5px;
+  box-sizing: border-box;
+  gap: 0.5px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 128px;
+  color: #fff;
+  font-family: Poppins;
+}
+.landing-child {
+  width: 0;
+  height: 133.5px;
+  position: absolute;
+  margin: 0 !important;
+  top: 562px;
+  right: 554.5px;
+  border-radius: 30px;
+  z-index: 1;
+}
+.contributors,
+.contributors1 {
+  width: 484px;
+  position: relative;
+  line-height: 78px;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.contributors1 {
+  z-index: 1;
+  margin-left: -484px;
+}
+.contributors-parent {
+  margin-right: -1px;
+  align-self: stretch;
+  background-color: #0074c8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 34px 20px 34px 21px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 63.8px;
+  color: #fff;
+  font-family: Poppins;
+}
+.mask-group-icon {
+  width: 269px;
+  height: 270px;
+  object-fit: cover;
+}
+.abdul-manan,
+.mask-group-icon {
+  position: relative;
+}
+.contributor-pair1,
+.contributor-pair2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-pair2 {
+  flex-direction: row;
+  padding: 0 30px 0 30.5px;
+}
+.contributor-pair1 {
+  flex-direction: column;
+  gap: 16px;
+}
+.mask-group-icon1 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.gabriel {
+  position: relative;
+  display: inline-block;
+  min-width: 114px;
+}
+.contributor-details,
+.contributor-pair3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details {
+  flex-direction: row;
+  padding: 0 77px 0 77.5px;
+}
+.contributor-pair3 {
+  flex-direction: column;
+  gap: 27px;
+}
+.mask-group-icon2 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.christopher {
+  position: relative;
+}
+.contributor-details1,
+.contributor-pair4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details1 {
+  flex-direction: row;
+  padding: 0 40px;
+}
+.contributor-pair4 {
+  flex-direction: column;
+  gap: 19px;
+}
+.mask-group-icon3 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.amos {
+  position: relative;
+  display: inline-block;
+  min-width: 91px;
+}
+.contributor-details2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+}
+.contributor-pair5 {
+  width: 269px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px;
+}
+.mask-group-icon4 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.solomon {
+  position: relative;
+}
+.contributor-details3,
+.contributor-pair6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details3 {
+  flex-direction: row;
+  padding: 0 65px 0 64px;
+}
+.contributor-pair6 {
+  flex-direction: column;
+  gap: 13px;
+}
+.mask-group-icon5 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.benjamin {
+  position: relative;
+}
+.contributor-details4,
+.contributor-pair,
+.contributor-pair7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details4 {
+  flex-direction: row;
+  padding: 0 61px 0 61.5px;
+}
+.contributor-pair,
+.contributor-pair7 {
+  flex-direction: column;
+  gap: 5px;
+}
+.contributor-pair {
+  align-self: stretch;
+  border-radius: 20px;
+  background-color: #0074c8;
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 13px 83px 30px 84px;
+  box-sizing: border-box;
+  gap: 30px 147px;
+  min-height: 731px;
+}
+.mask-group-icon6 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.adams {
+  position: relative;
+  display: inline-block;
+  min-width: 110px;
+}
+.contributor-card,
+.contributor-details5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details5 {
+  flex-direction: row;
+  padding: 0 79px 0 79.5px;
+}
+.contributor-card {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+.mask-group-icon7 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.richard {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+}
+.contributor-card1,
+.contributor-details6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details6 {
+  flex-direction: row;
+  padding: 0 74px 0 74.5px;
+}
+.contributor-card1 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 418px;
+  flex-direction: column;
+  gap: 8px;
+}
+.mask-group-icon8 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.nelson {
+  position: relative;
+  display: inline-block;
+  min-width: 110px;
+}
+.contributor-card2,
+.contributor-details7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details7 {
+  flex-direction: row;
+  padding: 0 79px 0 79.5px;
+}
+.contributor-card2 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 836px;
+  flex-direction: column;
+  gap: 16px;
+}
+.mask-group-icon9 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.blessing {
+  position: relative;
+}
+.contributor-card3,
+.contributor-details8 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details8 {
+  flex-direction: row;
+  padding: 0 67px;
+}
+.contributor-card3 {
+  margin: 0 !important;
+  position: absolute;
+  top: 355px;
+  left: 0;
+  flex-direction: column;
+  gap: 9px;
+}
+.mask-group-icon10 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.emmanuel {
+  position: relative;
+}
+.contributor-card4,
+.contributor-details9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details9 {
+  flex-direction: row;
+  padding: 0 52px;
+}
+.contributor-card4 {
+  margin: 0 !important;
+  position: absolute;
+  top: 355px;
+  left: 418px;
+  flex-direction: column;
+  gap: 9px;
+}
+.mask-group-icon11 {
+  width: 269px;
+  height: 270px;
+  position: relative;
+  object-fit: cover;
+}
+.herman {
+  position: relative;
+  display: inline-block;
+  min-width: 125px;
+}
+.contributor-card5,
+.contributor-details10 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contributor-details10 {
+  flex-direction: row;
+  padding: 0 72px 0 71px;
+}
+.contributor-card5 {
+  margin: 0 !important;
+  position: absolute;
+  top: 355px;
+  left: 836px;
+  flex-direction: column;
+  gap: 9px;
+}
+.contributor-card-parent {
+  height: 673px;
+  width: 1105px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  gap: 30px 147px;
+}
+.contributor-card-parent,
+.contributor-pair8,
+.contributor-row {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.contributor-pair8 {
+  align-self: stretch;
+  border-radius: 20px;
+  background-color: #0074c8;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: 29px 20px 29px 21px;
+  box-sizing: border-box;
+}
+.contributor-row {
+  width: 1272px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 38px;
+}
+.contributor-grid,
+.landing {
+  display: flex;
+  box-sizing: border-box;
+}
+.contributor-grid {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 32.1px;
+  color: #fff;
+  font-family: Inter;
+}
+.landing {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 58px;
+  gap: 22px;
+  line-height: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .contributor-pair {
+    gap: 73px;
+    padding-left: 42px;
+    padding-right: 41px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .welcome-to-ezy {
+    font-size: 51px;
+  }
+  .welcome-to-ezy1 {
+    font-size: 24px;
+  }
+  .navigation-header-parent {
+    padding-bottom: 29px;
+    box-sizing: border-box;
+  }
+  .contributors,
+  .contributors1 {
+    font-size: 51px;
+    line-height: 62px;
+  }
+  .abdul-manan,
+  .adams,
+  .amos,
+  .benjamin,
+  .blessing,
+  .christopher,
+  .emmanuel,
+  .gabriel,
+  .herman,
+  .nelson,
+  .richard,
+  .solomon {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation-header-parent {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .contributor-pair {
+    gap: 37px;
+    padding-left: 21px;
+    box-sizing: border-box;
+  }
+  .contributor-pair8 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .contributor-row {
+    gap: 19px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .welcome-to-ezy {
+    font-size: 32px;
+  }
+  .welcome-to-ezy1 {
+    font-size: 18px;
+  }
+  .contributors,
+  .contributors1 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+  .abdul-manan,
+  .gabriel {
+    font-size: 19px;
+  }
+  .contributor-details {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .amos,
+  .christopher,
+  .solomon {
+    font-size: 19px;
+  }
+  .contributor-details3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .benjamin {
+    font-size: 19px;
+  }
+  .contributor-details4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .contributor-pair {
+    gap: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .adams,
+  .blessing,
+  .emmanuel,
+  .herman,
+  .nelson,
+  .richard {
+    font-size: 19px;
+  }
+}

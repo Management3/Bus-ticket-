@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+}
+
+.nav_bar img{
+    width: 279px;
+    height: 106px;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a{
+    gap: 30px;
+
+}
+
+.bus__container{
+    
+    height: 400px;
+    background-image: linear-gradient(rgba(26, 10, 204, 0.35),rgba(15, 12, 223, 0.8)), url(
+        assests/ezy_bus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 45px;
+   column-gap: 10px;
+   color: #fff;
+}
+
+.bus__container h4{
+    font-weight: 100;
+}
+
+#ezy
+{
+  top: -10px;
+  left: 200px;  
+  position: absolute;
+  opacity: 40%;
+  
+
+}
+
+
+.table1__container{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    height: 165px;
+    width: 950px;
+    background: #fff;
+    border-radius: 40px;
+     position: absolute;
+    top: 300px;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    
+     
+    
+
+}
+
+.table1{
+    border-collapse: separate  ;
+    border-spacing: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #000;
+    
+}
+
+td,th{
+    padding-right: 100px;
+} 
+
+
+
+ 
+
+#inner_search{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+     top: 150px;
+     width: 200px;
+     height: 30px;
+     background:#fad309;
+     position: absolute;
+
+}
+
+::placeholder{
+    padding: 75px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: row;
+    width: 88dvw;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+.hero img{
+    width: 468px;
+    height: 419px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+ 
+
+.hero__text{
+width: 620px;
+height: 300px;
+margin-top: 50px;
+margin-right: 20px;
+padding: 30px;
+font-size: 20px;
+ 
+}
+
+#hero__text1{
+text-align: start;
+color: #27abfe;
+padding: 10px;
+line-height: 1.5;
+}
+
+.hero__text2{
+    text-align: start;
+    margin-top: 30px;
+    color: #3c3c3d;
+    line-height: 1.2;
+}
+
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+    gap: 600px;
+    margin-top: 60px;
+    height: 256px;
+}
+
+.payment_methods{
+align-items: end;
+padding: 10px;
+}
+
+.payment_methods img{
+    width: 96px;
+    height: 65px ;
+}
+
+#telecel{
+    margin-left: 40px;
+}
+
+.info{
+    line-height: 1.5;
+}
+
+@media (max-width: 769px){
+    .nav_bar{
+         
+        gap: 200px;
+    }
+
+    .bus__container{
+         width: 790px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 30%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       font-size: 45px;
+       column-gap: 10px;
+    ;
+
+    }
+    
+    .table1__container{
+        
+        height: 165px;
+        width: 650px;
+     
+    
+    }
+
+    #ezy
+{
+  top: 10px;
+  left: 100px;  
+  position: absolute;
+  opacity: 40%;
+  font-size: 50px;
+  
+
+}
+
+.bus__container h4{
+    font-weight: 50;
+    font-size: 30px;
+}
+
+.bus__container h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.hero{
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.footer_container{
+    gap: 200px;
+}
+
+}
+
+@media (max-width: 495px){
+    .nav_bar{
+         
+        gap: 50px;
+    }
+ 
+    
+
+    .bus__container{
+        width: 720px;
+    }
+    .table1__container{
+        
+        height: 165px;
+        width: 650px;
+     
+    
+    }
+
+    #ezy
+{
+  top: 10px;
+  left: 100px;  
+  position: absolute;
+  opacity: 40%;
+  font-size: 50px;
+  
+
+}
+
+.bus__container h4{
+    font-weight: 50;
+    font-size: 30px;
+}
+
+.bus__container h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.hero{
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.footer_container{
+    gap: 100px;
+    width: 720px;
+}
+
+}
+
+
+ 
+
