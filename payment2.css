@@ -1,0 +1,66 @@
+.btn_container{
+    margin-top:450px;
+}
+
+.payment2_container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 740px;
+    height: 502px;
+    background:#d9d9d9;
+    top: 400px;
+    left: 400px;
+    border-radius: 12px;
+}
+
+.info2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ 
+
+
+
+.info2 h3{
+    font-size: 48px;
+    color: #0094ff;
+}
+
+
+@media   (max-width: 798px){
+    .payment2_container{   
+    top: 400px;
+    left: 100px;
+    width: 650px;
+    height: 400px;
+    margin-top: 40px;
+    }
+
+    .info2 img{
+        width: 200px;
+        height: 200px;
+        margin-left: 70px;
+    }
+}
+
+
+
+@media   (max-width: 495px){
+    .payment2_container{   
+    top: 400px;
+    left: 100px;
+    width: 450px;
+    height: 400px;
+    }
+
+
+    .info2 img{
+        width: 200px;
+        height: 200px;
+        margin-left: 70px;
+    }
+}
