@@ -1,0 +1,139 @@
+
+ 
+    .schedule_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 24px;
+    
+    }
+
+    .headings{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 160px;
+        background:#0094ff ;
+        width: 1120px;
+        height: 61px;
+        color: #fff;
+        padding-right: 240px;
+        position: relative;
+
+    }
+
+
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 150px;
+        width: 1120px;
+        height: 100px;
+        color: #fff;
+        padding-right: 230px;
+        position: relative;
+
+    }
+
+    .heading h4{
+        color: #000;
+    }
+
+    .btn_sche{
+        position: absolute;
+        top: 790px;
+        left: 1179px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 60px;
+         
+    }
+    .btn_sche button{
+        background: #0094ff;
+        outline: none;
+        border:none;
+        width: 140px;
+        height: 40px;
+    }
+
+    button a{
+        color: #fff;
+    }
+
+
+    @media screen and (max-width: 769px){
+
+    .headings{
+        
+        gap: 80px;
+        width: 800px;
+        padding-right: 40px;
+    overflow-x: hidden;
+
+    }
+     
+    .heading{
+        padding-right: 10px;
+        gap: 70px;
+        width: 400px;
+    }
+
+    .btn_sche{
+        position: absolute;
+        top: 790px;
+        left: 640px;
+       
+        gap: 60px;
+    }
+
+
+    .btn_sche button{
+        width: 60px ;
+    }
+     
+   
+    
+    }
+
+
+
+    @media screen and (max-width: 495px){
+      
+
+
+        .headings{
+        
+            gap: 40px;
+            width: 800px;
+    padding-left: 200px;
+        overflow-x: hidden;
+    
+        }
+         
+        .heading{
+            padding-left: 220px;
+            gap: 35px;
+            width: 400px;
+        }
+    
+        .btn_sche{
+            position: absolute;
+            top: 790px;
+            left: 510px;
+            gap: 60px;
+        }
+    
+    
+        .btn_sche button{
+            width: 60px ;
+        }
+         
+
+
+    }
