@@ -25,6 +25,10 @@ Contributors List
      	Contributions: mobile app development.
 	GitHub: @carlysberg
 
+     Christopher 
+      Contributions: UI/UX designer
+ GitHub: @Aice Chris
+
     Opoku Gyimah Herman
         Contributions: Assigning tasks
 	Github: @Gyimah13
