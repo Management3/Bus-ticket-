@@ -11,47 +11,108 @@ We welcome contributions from the group members. If you're interested in contrib
     - Push to your fork: git push origin feature/your-feature-name.
     - Open a pull request.
 
-Contributors List
 
-    Your Name
-        Contributions: Feature A, Bugfix B
-        GitHub: @your-username`
+**Project Contributors**
 
-     Solomon Chamamme Nnyabe
-     	Contributions: Backend Boilerplate.
+#Ishmael Epaha Mensah
+	Role: Project Lead • Full-Stack Developer • System Architect
+	
+	Contributions:
+	Project architecture and system design
+	Backend development and integration
+	Frontend implementation
+	Repository structure and coordination of development tasks
+	Overall project supervision and deployment preparation
+	GitHub: @Nanaishmael
+
+
+
+#Solomon Chamamme Nnyabe
+	Role: Backend Developer
+	
+	Contributions:
+	Backend boilerplate implementation
+	Initial server configuration
 	GitHub: @Nnya-be
-    
-     Kuwuamenu Kofi Gabriel
-     	Contributions: mobile app development.
+	
+
+
+#Kuwuamenu Kofi Gabriel
+	Role: Mobile Application Developer
+	
+	Contributions:
+	Flutter mobile application development
+	Mobile interface implementation
 	GitHub: @carlysberg
 
-     Christopher 
-      Contributions: UI/UX designer
- GitHub: @Aice Chris
 
-    Opoku Gyimah Herman
-        Contributions: Assigning tasks
-	Github: @Gyimah13
 
-     Mensah Emmanuel
-    Contributions: frontend development
-    Github: @MrMensah1
+#Christopher
+	Role: UI / UX Designer
+	
+	Contributions:
+	User interface design
+	User experience improvements
+	GitHub: @AiceChris
 
-    Dogbey Blessing Emmanuel
-        Contributions: frontend developer
-	Github: @Blessnk1
 
-     Ishmael Adams
-        Contribution: frontend developer
-	 Github: @Nanaishmael
 
-      Adjahor Benjamin Kusi
-       Contribution: frontend developer
-        Github: @benkusi24
+#Opoku Gyimah Herman
+	Role: Project Coordinator
+	
+	Contributions:
+	Task coordination
+	Team workflow organization
+	GitHub: @Gyimah13
 
-   
-      Richmond Baah Gyimah 
-        contribution:  assigning tasks
-	Github:@richnird
-        
+
+
+#Mensah Emmanuel
+	Role: Frontend Developer
+	
+	Contributions:
+	Web interface development
+	Frontend feature implementation
+	GitHub: @MrMensah1
+
+
+
+#Dogbey Blessing Emmanuel
+	Role: Frontend Developer
+	
+	Contributions:
+	Frontend components development
+	Interface styling
+	GitHub: @Blessnk1
+
+
+
+
+#Ishmael Adams
+	Role: Frontend Developer
+	
+	Contributions:
+	Web interface development
+	Frontend features and testing
+	GitHub: @Nanaishmael
+
+
+	
+#Adjahor Benjamin Kusi
+	Role: Frontend Developer
+	
+	Contributions:
+	Frontend page development
+	UI integration
+	GitHub: @benkusi24
+
+
+
+#Richmond Baah Gyimah
+	Role: Project Coordinator
+	
+	Contributions:
+	Task assignments
+	Team collaboration support
+
 
