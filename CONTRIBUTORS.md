@@ -23,7 +23,7 @@ We welcome contributions from the group members. If you're interested in contrib
 	Frontend implementation
 	Repository structure and coordination of development tasks
 	Overall project supervision and deployment preparation
-	GitHub: @Nanaishmael
+	GitHub: @Management3
 
 
 
